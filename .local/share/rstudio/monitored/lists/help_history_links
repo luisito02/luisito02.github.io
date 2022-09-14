@@ -1,0 +1,4 @@
+help/library/base/html/Special.html,R: Special Functions of Mathematics
+help/library/utils/html/head.html,R: Return the First or Last Parts of an Object
+help/library/base/html/length.html,R: Length of an Object
+help/library/base/html/lapply.html,R: Apply a Function over a List or Vector

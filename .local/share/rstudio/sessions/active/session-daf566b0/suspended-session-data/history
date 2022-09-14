@@ -1,0 +1,512 @@
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_tab)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_floor)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_floor)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+barplot(x_floor)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+head(x_floor)
+x_floor_table <- table(x_floor)
+barplot(x_floor)
+x <- runif(n=10000, min=1, max=10)
+head(x)
+x_round <- round(x)
+head(x_round)
+x_tab <- table(x_round)
+## barplot(x_tab)
+x_floor <- floor(x)
+head(x_floor)
+x_floor_table <- table(x_floor)
+barplot(x_floor)
+floor(runif(5000,0,11))
+plot(floor(runif(5000,0,11)))
+plot(sample(0:10, size=5000, replace=T))
+plot(sample(0:10, size=5000, replace=T))
+plot(ceiling(runif(5000,-1,10)))
+plot(round(runif(5000,-1,11)))
+birthdays <- 1:365
+samp <- sample(birthdays, size=35, replace=T)
+sum(table(samp)>1)
+for i=1:1000 (set.seed(322)
+sample(0:10, size=5000, replace=T)
+sample(0:10, size=5000, replace=T)
+round(runif(5000,-1,11))
+pbirthday(35)
+birthdays <- 1:365
+samp <- sample(birthdays, size=35, replace=T)
+sum(table(samp)>1)
+set.seed(322)
+shared_bd <- vector()
+for(i in 1:10000){
+samp <- sample(birthdays, size=35, replace=T)
+shared_bd[i]<- sum(table(samp)>1)
+}
+mean(shared_bd)
+birthdays <- 1:365
+samp <- sample(birthdays, size=35, replace=T)
+sum(table(samp)>1)
+set.seed(322)
+shared_bd <- vector()
+for(i in 1:10000){
+samp <- sample(birthdays, size=35, replace=T)
+shared_bd[i]<- sum(table(samp)>1)
+}
+mean(shared_bd)
+birthdays <- 1:365
+samp <- sample(birthdays, size=35, replace=T)
+sum(table(samp)>1)
+set.seed(322)
+shared_bd <- vector()
+for(i in 1:10000){
+samp <- sample(birthdays, size=35, replace=T)
+shared_bd[i]<- sum(table(samp)>1)
+}
+mean(shared_bd)
+pbirthday(35)
+`r  knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d8/UT-Tower-in-Orange.jpg")`
+letters
+typeof(letters)
+length(letters)
+letters %in% c("t", "e", "s", "t")
+letters(1)
+```{R}
+```{R}
+letters1 = letters
+counter = 0
+for (i in 1:length(letters)) {
+if (letters1(i)) {
+counter = counter + 1
+}
+}
+letters1 = letters
+counter = 0
+for (i in 1:length(letters)) {
+if (letters1(i) = FALSE) {
+letters1 = letters
+counter = 0
+for (i in 1:length(letters)) {
+if (letters1(i) == FALSE) {
+counter = counter + 1
+}
+}
+counter = 0
+for (i in 1:length(letters)) {
+if (letters %in% c("t", "e", "s", "t") == FALSE) {
+counter = counter + 1
+}
+}
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (letters %in% c("t", "e", "s", "t") == FALSE) {
+counter = counter + 1
+}
+}
+lettersTest = letters %in% c("t", "e", "s", "t")
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (lettersTest == FALSE) {
+counter = counter + 1
+}
+}
+lettersTest = letters %in% c("t", "e", "s", "t")
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (lettersTest == FALSE) {
+counter = counter + 1
+}
+}
+lettersTest = letters %in% c("t", "e", "s", "t")
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (lettersTest(i) == FALSE) {
+counter = counter + 1
+}
+}
+if (lettersTest(i) == FALSE) {
+counter = counter + 1
+}
+lettersTest(1)
+lettersTest(2)
+lettersTest(3)
+x = 1:10
+x(2)
+x[2]
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (lettersTest[i] == FALSE) {
+counter = counter + 1
+}
+}
+counter = 0
+i =1
+for (i in 1:length(letters)) {
+if (lettersTest[i] == FALSE) {
+counter = counter + 1
+}
+}
+counter
+display(counter)
+which(c(F, T, F, T, F, T))
+help
+help(c())
+which(c(F, T, F, T, F, T))
+which(c(letters))
+which(letters %in% c("t", "e", "s", "t"))
+which(letters %in% c("t", "e", "s", "t"))
+which(letters %in% name)
+name <- c("s","i","m","o","n","e")
+# your code here
+which(letters %in% name)
+which(letters %in% name)
+which(letters %in% name)
+name <- c("s","i","m","o","n","e")
+# your code here
+t <- which(letters %in% name)
+```{R}
+which(letters %in% name)
+t <- which(letters %in% name)
+name <- c("s","i","m","o","n","e")
+# your code here
+which(letters %in% name)
+t <- which(letters %in% name)
+tPlus <- t + 1
+cipherPlus <- cipher + 1
+name <- c("s","i","m","o","n","e")
+# your code here
+which(letters %in% name)
+cipher <- which(letters %in% name)
+name <- c("s","i","m","o","n","e")
+# your code here
+which(letters %in% name)
+cipher <- which(letters %in% name)
+cipherPlus <- cipher + 1
+letters[cipherPlus]
+letters[cipher]
+cipherPlus <- c(cipher) + 1
+cipherPlus <- c(cipher) + 1
+letters[c(cipherPlus)]
+name <- c("s","i","m","o","n","e")
+# your code here
+which(c(letters %in% name))
+cipher <- which(letters %in% name)
+cipherPlus <- c(cipher) + 1
+letters[c(cipherPlus)]
+cipherMinus <- cipherPlus - 1
+letters[cipherMinus]
+for (i in 1:length(name)) {
+positions = name(i)
+}
+for (i in 1:length(name)) {
+positions = name[i]
+}
+positions
+for (i in 1:length(name)) {
+positions = name[i]
+}
+length(name)
+positions = name[i]
+for (i in 1:length(name)) {
+positions = name[i]
+}
+for (i in 1:length(name)) {
+positions = name[i]
+}
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+letters(c(positions))
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+letters[c(positions)]
+letters[positions]
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+letters[positions]
+letters[positions]
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+letters[positions]
+for (i in 1:length(name)) {
+positions[i] = name[i] + 1
+}
+positions[i] = name[i] + 1
+for (i in 1:length(name)) {
+positions[i] = name[i]
+}
+positions <- positions + 1
+for (i in 1:length(name)) {
+positions[i] = letters[name[i]]
+}
+letters[positions]
+for (i in 1:length(name)) {
+positions[i] = letters[name[i]]
+}
+for (i in 1:length(name)) {
+positions[i] = letters[name[i]]
+}
+for (i in 1:length(name)) {
+positions[i] = letters[name]
+}
+letters[name]
+name <- c("s","i","m","o","n","e")
+for (i in 1:length(name)) {
+positions[i] = letters[name]
+}
+for (i in 1:length(name)) {
+positions[i] = letters[name[i]]
+}
+name[1]
+letters[s]
+letters(s)
+letters[s]
+letters["s"]
+name <- c("s","i","m","o","n","e")
+# your code here
+which(c(letters %in% name))
+cipher <- which(letters %in% name)
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name)
+}
+positions[i] = which(letters %in% name)
+which(letters %in% name)
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i])
+}
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i])
+}
+letters[positions]
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i])
+}
+letters[positions]
+positions <- positions + 1
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + 1
+}
+positions %in% letters
+letters %in% positions
+k = 1
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + k
+}
+name2
+name <- c("s","i","m","o","n","e")
+# your code here
+which(c(letters %in% name))
+cipher <- which(letters %in% name)
+get_pos(name)
+get_pos <- function(word){
+which(letters %in% word)
+}
+get_pos(name)
+get_pos <- function(word){
+which(letters %in% word)
+}
+get_pos(name)
+get_pos(name2)
+help(sapply)
+sapply(name, get_pos)
+if ((positions + k) < 27){
+posisitions + k
+} else {
+positions + k %% 26
+}
+(positions + k) < 27
+positions + k
+c(positions + k)
+c(positions + k)
+c(positions)
+positions + 1
+for (i in 1:length(name)) {
+if ((positions[i] + k) < 27){
+positions[i] = which(letters %in% name[i]) + k
+} else {
+positions[i] + k %% 26
+}
+##positions[i] = which(letters %in% name[i]) + k
+}
+positions[i] = which(letters %in% name[i]) + k
+if ((positions[i] + k) < 27){
+positions[i] = which(letters %in% name[i]) + k
+}
+(positions[i] + k)
+# your code here
+i = 1
+(positions[i] + k)
+positions 1
+positions(1)
+positions[1]
+positions[1] +1
+k = 1
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + k
+}
+(letters %in% positions[i] + k) < 27
+for (i in 1:length(name)) {
+if ((letters %in% positions[i] + k) < 27){
+positions[i] = which(letters %in% name[i]) + k
+} else {
+positions[i] + k %% 26
+}
+##positions[i] = which(letters %in% name[i]) + k
+}
+positions[i] = which(letters %in% name[i]) + k
+if ((letters %in% positions[i] + k) < 27){
+positions[i] = which(letters %in% name[i]) + k
+}
+for (i in 1:length(wordTest)) {
+if ((letters %in% positions[i] + k) < 27){
+positions[i] = which(letters %in% name[i]) + k
+}
+(letters %in% positions[i] + k)
+(letters %in% positions[i] + k)
+type((letters %in% positions[i] + k))
+typeof((letters %in% positions[i] + k))
+typeof((letters %in% positions[i] + k))
+letters %in% positions[1]
+positions[1]
+letters %in% name
+letters %in% name
+letters %in% wordTest
+letters %in% lol
+letters
+2+2
+2+2
+2=2
+for (i in 1:length(wordTest)) {
+if ((letters %in% positions[i] + k) < 27){
+positions[i] = which(letters %in% wordTest[i]) + k
+} else {
+positions[i] + k %% 26
+}
+##positions[i] = which(letters %in% name[i]) + k
+}
+k = 1
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + k
+}
+```{R}
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + k
+}
+positions[i] = which(letters %in% name[i]) + k
+which(letters %in% name[i]) + k
+name = "simone"
+k = 1
+for (i in 1:length(name)) {
+positions[i] = which(letters %in% name[i]) + k
+}
+which(letters %in% name[i])
+name = Cipher
+name = cipher
+which(letters %in% name[i]) + k
+letters %in% name[i]
+letters %in% name
+which(letters %in% name[i])
+positions = []
+positions = ()
+positions
+positions <- c()
+name = cipher
+name <- c("s","i","m","o","n","e")
+# your code here
+which(c(letters %in% name))
+cipher <- which(letters %in% name)
+wordTest = c("C","O","N","F","I","D","E","N","T","I","A","L")

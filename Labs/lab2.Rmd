@@ -1,0 +1,19 @@
+---
+title: "Lab 2"
+output: html_document
+date: "2022-09-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+plot(floor(runif(5000,0,11)))
+
+plot(sample(0:10, size=5000, replace=T))
+
+plot(ceiling(runif(5000,-1,10)))
+
+plot(round(runif(5000,-1,11)))
+
+

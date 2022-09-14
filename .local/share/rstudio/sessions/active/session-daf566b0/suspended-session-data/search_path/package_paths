@@ -1,0 +1,7 @@
+datasets="/stor/system/opt/R/R-4.0.3/lib/R/library/datasets"
+ggplot2="/stor/system/opt/R/R-4.0.3/lib/R/library/ggplot2"
+grDevices="/stor/system/opt/R/R-4.0.3/lib/R/library/grDevices"
+graphics="/stor/system/opt/R/R-4.0.3/lib/R/library/graphics"
+methods="/stor/system/opt/R/R-4.0.3/lib/R/library/methods"
+stats="/stor/system/opt/R/R-4.0.3/lib/R/library/stats"
+utils="/stor/system/opt/R/R-4.0.3/lib/R/library/utils"

@@ -1,0 +1,18 @@
+"0","get_pos <- function(word){
+  which(letters %in% word)
+}
+
+get_pos(name)
+"
+"1","[1]"
+"1","  5"
+"1","  9"
+"1"," 13"
+"1"," 14"
+"1"," 15"
+"1"," 19"
+"1","
+"
+"0","get_pos(name2)"
+"2","Error in letters %in% word : object 'name2' not found
+"

@@ -1,0 +1,1 @@
+2022-09-02T20:39:08.435019Z [rsession-lb36634] ERROR The previous R session terminated abnormally; LOGGED FROM: rstudio::core::Error {anonymous}::rInit(const rstudio::r::session::RInitInfo&) src/cpp/session/SessionMain.cpp:721

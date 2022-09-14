@@ -1,0 +1,5 @@
+"0","if ((letters %in% positions[i] + k) < 27){
+  positions[i] = which(letters %in% name[i]) + k
+}
+"
+"2","Warning: the condition has length > 1 and only the first element will be used"

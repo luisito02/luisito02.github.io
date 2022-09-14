@@ -1,0 +1,15 @@
+---
+title: "Lab 2"
+output: html_document
+date: "2022-09-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+`r  knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d8/UT-Tower-in-Orange.jpg")` 
+
+
+

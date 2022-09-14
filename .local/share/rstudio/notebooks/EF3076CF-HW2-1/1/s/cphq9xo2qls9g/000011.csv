@@ -1,0 +1,16 @@
+"0","name <- c(""s"",""i"",""m"",""o"",""n"",""e"")
+
+# your code here
+
+which(c(letters %in% name))
+"
+"1","[1]"
+"1","  5"
+"1","  9"
+"1"," 13"
+"1"," 14"
+"1"," 15"
+"1"," 19"
+"1","
+"
+"0","cipher <- which(letters %in% name)"

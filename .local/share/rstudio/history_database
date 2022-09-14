@@ -1,0 +1,893 @@
+1661451419445:# Put your cursor anywhere on the line below and hit ctrl+enter
+1661451419447:print("hello world")
+1661451437042:print("hello world")
+1661451440380:9*9
+1661451442371:9^2
+1661451443690:1:100
+1661451444829:1:100*2
+1661451447275:# Notice that order of operations applies here!
+1661451447277:6/2*(1+2)
+1661451459486:6/(2*(1+2))
+1661451462932:# Base R comes with many built-in calculator functions
+1661451462934:log10(1000)
+1661451465637:log(exp(3))
+1661451467889:sin(pi)
+1661451632519:# Notice that order of operations applies here!
+1661451632521:6/2*(1+2)
+1661451633048:6/(2*(1+2))
+1661451706500:sum(1:100)
+1661451722320:prod(1:100)
+1661451728663:factorial(100)
+1661451731189:choose(100,2)
+1661451733866:choose(100,2)
+1661451761679:?choose
+1661451824705:2+2
+1661451827734:is.numeric(2+2)
+1661451831864:is.numeric("4")
+1661451836301:"4"
+1661451840358:4
+1661451878205:is.numeric("A")
+1661451878207:is.character("A")
+1661451891917:100*101/2
+1661451936085:hi <- "hello world"
+1661451940054:hi = "hello world"
+1661451945847:"goodbye world" -> bye
+1661451968372:hi
+1661451968374:bye
+1661452062563:hiTwice=rep(hi,2)
+1661452079570:hiTwice
+1661452091341:data=10:1
+1661452120818:# Notice also that "data" never appeared in the console, it just got stored.
+1661452120820:# To run it, just type the word data and hit enter (or run the line below)
+1661452120822:data
+1661452135303:2>2
+1661452137586:2==3
+1661452140853:# How many individual values does our "data" vector contain (i.e., how long is this vector)?
+1661452140855:length(data)
+1661452146016:# If we want ascending order, we can reverse it and then overwrite the old object. Let's do that.
+1661452146018:data<-rev(data)
+1661452147940:data
+1661452154393:# Now let's remove it momentarily with the rm() function
+1661452154395:rm(data)
+1661452171116:# This creates a sequence of integers from 10 to 1 and stores it in the vector object "data"
+1661452171118:data=10:1
+1661452179032:# Now that you've got it back, check to see what the first and last elements are
+1661452179034:# We use brackets to index a vector (which is a list of elements of the same type)
+1661452179036:data[1]
+1661452181236:data[10]
+1661452184037:data[1:3]
+1661452186653:data[11]
+1661452189984:# Let's add up all of them using the sum() function
+1661452189997:sum(data)
+1661452192505:# How about this one
+1661452192508:cumsum(data)
+1661452275005:# Now that you've got it back, check to see what the first and last elements are
+1661452275008:# We use brackets to index a vector (which is a list of elements of the same type)
+1661452275010:data[1]
+1661452277032:data[10]
+1661452288180:data[1:3]
+1661452323040:data[11]
+1661452382091:# Let's add up all of them using the sum() function
+1661452382093:sum(data)
+1661452384326:# How about this one
+1661452384328:cumsum(data)
+1661452462485:# What about this?
+1661452462487:cumsum(data)/sum(data)
+1661452495957:# We can add 1 to every datapoint (many operations are vectorized)
+1661452495959:dataPlusOne<-data+1
+1661452513937:dataPlusOne
+1661452515561:dataPlusOne-1
+1661452520631:# Multiply every original datapoint by 2
+1661452520633:doubleData<-data*2
+1661452521439:doubleData
+1661452522572:# OK, what does this do?
+1661452522575:diff(doubleData)
+1661452523514:diff(data)
+1661452533774:# Bonus: what's going on here?!
+1661452533776:diff(cumsum(data))
+1661452539210:# Sum the vector containing the doubled data
+1661452539212:sum(doubleData) # or sum(data*2)
+1661452540401:length(doubleData)*(length(doubleData)+1)
+1661452542306:# What's the average value?
+1661452542308:mean(doubleData)
+1661452544770:# special formula for sum of evens
+1661452544772:sum(doubleData)/length(doubleData)
+1661452545887:# How can we get all the odd numbers from 1 to 19?
+1661452545889:oddNums<-doubleData-1
+1661452546316:oddNums
+1661452546744:sum(oddNums)
+1661452547159:# special formula for sum of odds
+1661452547161:length(oddNums)^2
+1661452547776:# Is it the same as twice the mean of the original data?
+1661452547778:mean(doubleData)==2*mean(data)
+1661452548320:data=doubleData
+1661452549290:# The last pane (SE) shows your files, plots, packages, etc.
+1661452549292:# Let's make a quick plot
+1661452549294:boxplot(data, col="lavender")
+1661452551216:# how do the lines in this boxplot relate to the following quantities
+1661452551218:fivenum(data)
+1661452552148:# You can also flip it over if you want
+1661452552150:boxplot(data,horizontal = T)
+1661452596657:# The last pane (SE) shows your files, plots, packages, etc.
+1661452596658:# Let's make a quick plot
+1661452596660:boxplot(data, col="lavender")
+1661452615349:# This creates a sequence of integers from 10 to 1 and stores it in the vector object "data"
+1661452615351:data=10:1
+1661452622039:# The last pane (SE) shows your files, plots, packages, etc.
+1661452622041:# Let's make a quick plot
+1661452622043:boxplot(data, col="lavender")
+1661452625743:# how do the lines in this boxplot relate to the following quantities
+1661452625745:fivenum(data)
+1661452628350:# You can also flip it over if you want
+1661452628352:boxplot(data,horizontal = T)
+1661452635206:# Or put two side-by-side
+1661452635208:boxplot(data,doubleData)
+1661452667906:# Or combine them together in a single vector using c()
+1661452667908:# This concatenate function let's you combine values into a vector (if all the same type), or list (if different types)
+1661452667910:allData<-c(data,doubleData)
+1661452669634:allData
+1661452670826:boxplot(allData)
+1661452674752:library(ggplot2)
+1661452692726:ggplot(data.frame(data=data),aes(y=data))+geom_boxplot()+scale_x_discrete()
+1661452712957:devtools::install_github("hadley/emo")
+1661452724241:emo::ji("sign of the horns")
+1661893931949:cp /stor/work/SDS322E_AF_Fall2022/homeworks/HW1.Rmd ~
+1661893959857:ls /stor/work/SDS322E_AF_Fall2022/homeworks/
+1661893992905:ls /stor/work/SDS322E_AF_Fall2022/homeworks/HW1.rmd
+1661894541049:head(quakes)
+1661983624954:data <- 1:20
+1661983624956:data <- data*2-1
+1661983624958:data <- rev(data)
+1661983624960:data[1]
+1661983658328:2!=3
+1661983831327:(5>4 | 2==3) & (3!=4 & 7<10)
+1661983972895:x<-c("dog", "cat", "lizard")
+1661983972899:y<-c("mouse", "lizard", "bird")
+1661983972902:x %in% y
+1661984007762:1st =2
+1661984012684:st = 2
+1661984025384:^k = 2
+1661984032261:@k = 1
+1661984076081:x<-c("dog", "cat", "lizard")
+1661984076085:y<-c("mouse", "lizard", "bird")
+1661984076088:z<-c(y, x)
+1661984083676:z
+1661984088634:print(z)
+1661984246126:x<-list(number=333, logical=TRUE, character="weemp womp")
+1661984246129:x
+1661984255244:class(x[1])
+1661984255247:class(x[[1]])
+1661984332131:students <- c("Elena", "Jeffrey", "Su", "Carlos")
+1661984332134:grades <- c(100, 91, 85, 94)
+1661984332137:attendance <- c(1, 0.9, 0.5, 0.8)
+1661984332140:gradebook <- data.frame(students, grades, attendance)
+1661984352486:help($)
+1661984393809:gradebook[gradebook$grades<95, gradebook$attendance>.5]
+1661984408918:gradebook[gradebook$grades<95 | gradebook$attendance>.5,]
+1661984426623:gradebook[gradebook$grades<95 & gradebook$attendance>.5,]
+1661984500933:gradebook[gradebook$grades<95 & gradebook$attendance>.5,]
+1661984507032:gradebook[grades<95 & attendance>.5]
+1661984516491:gradebook[gradebook$grades<95, gradebook$attendance>.5,]
+1661984531986:gradebook[gradebook$grades<95, gradebook$attendance>.5]
+1661984541740:gradebook[gradebook$grades<95 | gradebook$attendance>.5,]
+1662052917322:rmv(all)
+1662053257279:head(quakes)
+1662053428972:```{R}
+1662053436245:```{R}
+1662053445862:```{R}
+1662053446927:head(quakes)
+1662053448472:head(quakes)
+1662053984009:t = head(quakes)
+1662054239855:head(quakes)
+1662054269777:# your code here
+1662054269780:quakes
+1662054284292:# your code here
+1662054284294:t <= quakes
+1662054291423:# your code here
+1662054291425:t = quakes
+1662054308754:# your code here
+1662054308756:t = quakes
+1662054310105:*Your typed answer goes here. 1-2 sentences only.*
+1662054311864:# your code here
+1662054311866:t = quakes
+1662054325976:# your code here
+1662054325979:t = head(quakes)
+1662054340401:help("head")
+1662054954787:length(t(,1))
+1662054959804:length(t( ,1))
+1662055035498:length(t)
+1662055047810:width(t)
+1662055060800:length(t(1))
+1662055065681:length(t)
+1662055085344:help("length")
+1662055254263:numOfObs = length(t(x))
+1662055265924:numOfObs = length(t(,))
+1662055351352:numOfObs = length(y)
+1662145612800:min(t(mag))
+1662145641624:t(4,5)
+1662145647032:t(1,1)
+1662145769214:t$mag
+1662145777025:min(t$mag)
+1662145795870:max(t$mag)
+1662145810395:median(t$mag)
+1662145860208:mean(t$mag)
+1662145861409:median(t$mag)
+1662145914740:min(head(quakes)$mag)
+1662145934498:min(head(quakes)$mag)
+1662145934507:max(head(quakes)$mag)
+1662145934512:mean(head(quakes)$mag)
+1662145934517:median(head(quakes)$mag)
+1662145971351:min(head(quakes)$depth)
+1662145971361:max(head(quakes)$depth)
+1662145971365:mean(head(quakes)$depth)
+1662145971370:median(head(quakes)$depth)
+1662146081579:min(head(quakes)$mag)
+1662146081588:max(head(quakes)$mag)
+1662146081592:mean(head(quakes)$mag)
+1662146081596:median(head(quakes)$mag)
+1662146081602:min(head(quakes)$depth)
+1662146081606:max(head(quakes)$depth)
+1662146081610:mean(head(quakes)$depth)
+1662146081614:median(head(quakes)$depth)
+1662146729806:median(quakes$mag[quakes$long>175])
+1662146729815:median(quakes[quakes$long>175,]$mag) #this is the more conventional notation
+1662158767531:# your code here
+1662158767534:Nrow(quakes)
+1662158777745:# your code here
+1662158777753:NROW(quakes)
+1662159033334:NCOL(quakes)
+1662160654954:mean(quakes$mag[quakes$depth>median(quakes$depth)])
+1662160654965:mean(quakes$mag[quakes$depth<median(quakes$depth)])
+1662163520376:sd(quakes$lat[quakes$depth>median(quakes$depth)])
+1662163521841:sd(quakes$lat[quakes$depth<median(quakes$depth)])
+1662163983640:hist(quakes$depth, main="Depth Histogram",xlab="Depths")
+1662164565352:plot(x=quakes$long, y=quakes$lat, main = "Quakes' geographic locations",
+1662164565355:xlab = "Longitude", ylab = "latitude")
+1662164952507:mean(quakes$depth[quakes$long>175])
+1662164952520:mean(quakes$depth[quakes$long<175])
+1662488366014:for(i in 1:n){
+1662488366043:xs[i] <- sqrt(x[i])
+1662488366045:}
+1662488375137:x = 1:10
+1662488375140:n = len(x)
+1662488382158:x = 1:10
+1662488382160:n = length(x)
+1662488382163:xs <- vector(length = n) # create an empty vector
+1662488382166:for(i in 1:n){
+1662488382168:xs[i] <- sqrt(x[i])
+1662488382170:}
+1662488405171:print(xs)
+1662589003075:*__sample text__*
+1662589055070:source("~/.active-rstudio-document")
+1662589390771:*__sample__*
+1662589393876:*__sample__*
+1662589414507:*sample*
+1662589423256:*sample*
+1662589426535:**sample**
+1662589439345:*sample*
+1662589442651:_sample_
+1662589457963:print(*sample*)
+1662589715220:2+2
+1662589939375:`r  knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d8/UT-Tower-in-Orange.jpg")`
+1662590706339:x <- runif(n=10000, min=1, max=10)
+1662590706632:head(x)
+1662590706886:x_round <- round(x)
+1662590707106:head(x_round)
+1662590707288:barplot(x_tab)
+1662590722424:x <- runif(n=10000, min=1, max=10)
+1662590722706:head(x)
+1662590722944:x_round <- round(x)
+1662590723226:head(x_round)
+1662590723447:x_tab <- table(x_round)
+1662590723709:barplot(x_tab)
+1662590773619:x <- runif(n=10000, min=1, max=10)
+1662590773689:head(x)
+1662590773739:x_round <- round(x)
+1662590773798:head(x_round)
+1662590773867:x_tab <- table(x_round)
+1662590773976:barplot(x_tab)
+1662590778159:x <- runif(n=10000, min=1, max=10)
+1662590778348:head(x)
+1662590778550:x_round <- round(x)
+1662590778753:head(x_round)
+1662590779019:x_tab <- table(x_round)
+1662590779239:barplot(x_tab)
+1662590782730:x <- runif(n=10000, min=1, max=10)
+1662590782940:head(x)
+1662590783123:x_round <- round(x)
+1662590783314:head(x_round)
+1662590783521:x_tab <- table(x_round)
+1662590783782:barplot(x_tab)
+1662590807457:x <- runif(n=10000, min=1, max=10)
+1662590807758:head(x)
+1662590807976:x_round <- round(x)
+1662590808131:head(x_round)
+1662590808438:x_tab <- table(x_round)
+1662590808617:barplot(x_tab)
+1662590809452:x <- runif(n=10000, min=1, max=10)
+1662590809505:head(x)
+1662590809576:x_round <- round(x)
+1662590809638:head(x_round)
+1662590809686:x_tab <- table(x_round)
+1662590809762:barplot(x_tab)
+1662590810992:x <- runif(n=10000, min=1, max=10)
+1662590811042:head(x)
+1662590811095:x_round <- round(x)
+1662590811142:head(x_round)
+1662590811194:x_tab <- table(x_round)
+1662590811248:barplot(x_tab)
+1662590812093:x <- runif(n=10000, min=1, max=10)
+1662590812310:head(x)
+1662590812492:x_round <- round(x)
+1662590812750:head(x_round)
+1662590812996:x_tab <- table(x_round)
+1662590813285:barplot(x_tab)
+1662590937499:x <- runif(n=10000, min=1, max=10)
+1662590937679:head(x)
+1662590937932:x_round <- round(x)
+1662590938117:head(x_round)
+1662590938290:x_tab <- table(x_round)
+1662590938558:barplot(x_tab)
+1662590938794:x_floor <- floor(x)
+1662590938999:barplot(x_tab)
+1662590952203:x <- runif(n=10000, min=1, max=10)
+1662590952395:head(x)
+1662590952712:x_round <- round(x)
+1662590952952:head(x_round)
+1662590953355:barplot(x_tab)
+1662590953644:x_floor <- floor(x)
+1662590953844:barplot(x_tab)
+1662590968228:x <- runif(n=10000, min=1, max=10)
+1662590968451:head(x)
+1662590968667:x_round <- round(x)
+1662590968913:head(x_round)
+1662590969341:barplot(x_tab)
+1662590969636:x_floor <- floor(x)
+1662590969885:barplot(x_tab)
+1662590970955:x <- runif(n=10000, min=1, max=10)
+1662590971144:head(x)
+1662590971413:x_round <- round(x)
+1662590971702:head(x_round)
+1662590972115:barplot(x_tab)
+1662590972353:x_floor <- floor(x)
+1662590972596:barplot(x_tab)
+1662590973602:x <- runif(n=10000, min=1, max=10)
+1662590973824:head(x)
+1662590974131:x_round <- round(x)
+1662590974361:head(x_round)
+1662590974724:barplot(x_tab)
+1662590975005:x_floor <- floor(x)
+1662590975197:barplot(x_tab)
+1662590976429:x <- runif(n=10000, min=1, max=10)
+1662590976667:head(x)
+1662590976823:x_round <- round(x)
+1662590977021:head(x_round)
+1662590977439:barplot(x_tab)
+1662590977706:x_floor <- floor(x)
+1662590977920:barplot(x_tab)
+1662590979480:x <- runif(n=10000, min=1, max=10)
+1662590979675:head(x)
+1662590979888:x_round <- round(x)
+1662590980089:head(x_round)
+1662590980421:barplot(x_tab)
+1662590980571:x_floor <- floor(x)
+1662590980612:barplot(x_tab)
+1662591015148:x <- runif(n=10000, min=1, max=10)
+1662591015344:head(x)
+1662591015545:x_round <- round(x)
+1662591015745:head(x_round)
+1662591015989:x_tab <- table(x_round)
+1662591016251:## barplot(x_tab)
+1662591016524:x_floor <- floor(x)
+1662591016741:barplot(x_tab)
+1662591018386:x <- runif(n=10000, min=1, max=10)
+1662591018604:head(x)
+1662591018835:x_round <- round(x)
+1662591019061:head(x_round)
+1662591019299:x_tab <- table(x_round)
+1662591019525:## barplot(x_tab)
+1662591019803:x_floor <- floor(x)
+1662591020036:barplot(x_tab)
+1662591021824:x <- runif(n=10000, min=1, max=10)
+1662591021911:head(x)
+1662591021962:x_round <- round(x)
+1662591022005:head(x_round)
+1662591022048:x_tab <- table(x_round)
+1662591022125:## barplot(x_tab)
+1662591022173:x_floor <- floor(x)
+1662591022229:barplot(x_tab)
+1662591023579:x <- runif(n=10000, min=1, max=10)
+1662591023632:head(x)
+1662591023676:x_round <- round(x)
+1662591023715:head(x_round)
+1662591023774:x_tab <- table(x_round)
+1662591023858:## barplot(x_tab)
+1662591023915:x_floor <- floor(x)
+1662591023997:barplot(x_tab)
+1662591038615:x <- runif(n=10000, min=1, max=10)
+1662591038827:head(x)
+1662591039009:x_round <- round(x)
+1662591039251:head(x_round)
+1662591039494:x_tab <- table(x_round)
+1662591039696:## barplot(x_tab)
+1662591039913:x_floor <- floor(x)
+1662591040146:barplot(x_tab)
+1662591045402:x <- runif(n=10000, min=1, max=10)
+1662591045580:head(x)
+1662591045728:x_round <- round(x)
+1662591045784:head(x_round)
+1662591045849:x_tab <- table(x_round)
+1662591045899:## barplot(x_tab)
+1662591045944:x_floor <- floor(x)
+1662591045996:barplot(x_tab)
+1662591047152:x <- runif(n=10000, min=1, max=10)
+1662591047191:head(x)
+1662591047232:x_round <- round(x)
+1662591047282:head(x_round)
+1662591047327:x_tab <- table(x_round)
+1662591047374:## barplot(x_tab)
+1662591047430:x_floor <- floor(x)
+1662591047549:barplot(x_tab)
+1662591049045:x <- runif(n=10000, min=1, max=10)
+1662591049240:head(x)
+1662591049491:x_round <- round(x)
+1662591049662:head(x_round)
+1662591049835:x_tab <- table(x_round)
+1662591050062:## barplot(x_tab)
+1662591050212:x_floor <- floor(x)
+1662591050431:barplot(x_tab)
+1662591073825:x <- runif(n=10000, min=1, max=10)
+1662591073998:head(x)
+1662591074197:x_round <- round(x)
+1662591074425:head(x_round)
+1662591074650:x_tab <- table(x_round)
+1662591074859:## barplot(x_tab)
+1662591075066:x_floor <- floor(x)
+1662591075151:barplot(x_floor)
+1662591077764:x <- runif(n=10000, min=1, max=10)
+1662591078073:head(x)
+1662591078256:x_round <- round(x)
+1662591078484:head(x_round)
+1662591078716:x_tab <- table(x_round)
+1662591078921:## barplot(x_tab)
+1662591079114:x_floor <- floor(x)
+1662591079369:barplot(x_floor)
+1662591086181:x <- runif(n=10000, min=1, max=10)
+1662591086477:head(x)
+1662591086712:x_round <- round(x)
+1662591086985:head(x_round)
+1662591087233:x_tab <- table(x_round)
+1662591087502:## barplot(x_tab)
+1662591087703:x_floor <- floor(x)
+1662591087939:barplot(x_floor)
+1662591197952:x <- runif(n=10000, min=1, max=10)
+1662591198189:head(x)
+1662591198444:x_round <- round(x)
+1662591198687:head(x_round)
+1662591198819:x_tab <- table(x_round)
+1662591198875:## barplot(x_tab)
+1662591198917:x_floor <- floor(x)
+1662591198964:head(x_floor)
+1662591199021:x_floor_table <- table(x_floor)
+1662591199083:barplot(x_floor)
+1662591209590:x <- runif(n=10000, min=1, max=10)
+1662591209637:head(x)
+1662591209690:x_round <- round(x)
+1662591209737:head(x_round)
+1662591209786:x_tab <- table(x_round)
+1662591209852:## barplot(x_tab)
+1662591209913:x_floor <- floor(x)
+1662591209970:head(x_floor)
+1662591210234:x_floor_table <- table(x_floor)
+1662591210480:barplot(x_floor)
+1662591251923:floor(runif(5000,0,11))
+1662591273616:plot(floor(runif(5000,0,11)))
+1662591287553:plot(sample(0:10, size=5000, replace=T))
+1662591338139:plot(sample(0:10, size=5000, replace=T))
+1662591342304:plot(ceiling(runif(5000,-1,10)))
+1662591345191:plot(round(runif(5000,-1,11)))
+1662591482023:birthdays <- 1:365
+1662591482069:samp <- sample(birthdays, size=35, replace=T)
+1662591482105:sum(table(samp)>1)
+1662591482171:for i=1:1000 (set.seed(322)
+1662591646681:sample(0:10, size=5000, replace=T)
+1662591656413:sample(0:10, size=5000, replace=T)
+1662591678225:round(runif(5000,-1,11))
+1662591760936:pbirthday(35)
+1662591973711:birthdays <- 1:365
+1662591973762:samp <- sample(birthdays, size=35, replace=T)
+1662591973898:sum(table(samp)>1)
+1662591973949:set.seed(322)
+1662591973978:shared_bd <- vector()
+1662591974006:for(i in 1:10000){
+1662591974098:samp <- sample(birthdays, size=35, replace=T)
+1662591974143:shared_bd[i]<- sum(table(samp)>1)
+1662591974168:}
+1662591999360:mean(shared_bd)
+1662592017128:birthdays <- 1:365
+1662592017309:samp <- sample(birthdays, size=35, replace=T)
+1662592017517:sum(table(samp)>1)
+1662592017703:set.seed(322)
+1662592017827:shared_bd <- vector()
+1662592017952:for(i in 1:10000){
+1662592018073:samp <- sample(birthdays, size=35, replace=T)
+1662592018175:shared_bd[i]<- sum(table(samp)>1)
+1662592018289:}
+1662592019508:mean(shared_bd)
+1662592020803:birthdays <- 1:365
+1662592021041:samp <- sample(birthdays, size=35, replace=T)
+1662592021269:sum(table(samp)>1)
+1662592021495:set.seed(322)
+1662592021633:shared_bd <- vector()
+1662592021730:for(i in 1:10000){
+1662592021853:samp <- sample(birthdays, size=35, replace=T)
+1662592022008:shared_bd[i]<- sum(table(samp)>1)
+1662592022170:}
+1662592023364:mean(shared_bd)
+1662592039894:pbirthday(35)
+1662592269572:`r  knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d8/UT-Tower-in-Orange.jpg")`
+1662648741862:letters
+1662650995486:typeof(letters)
+1662651011800:length(letters)
+1662651149723:letters %in% c("t", "e", "s", "t")
+1662652335923:letters(1)
+1662652383060:```{R}
+1662652392507:```{R}
+1662652406231:letters1 = letters
+1662652410669:counter = 0
+1662652418608:for (i in 1:length(letters)) {
+1662652418855:if (letters1(i)) {
+1662652419118:counter = counter + 1
+1662652419404:}
+1662652419684:}
+1662652448552:letters1 = letters
+1662652449044:counter = 0
+1662652449544:for (i in 1:length(letters)) {
+1662652449815:if (letters1(i) = FALSE) {
+1662652473853:letters1 = letters
+1662652474265:counter = 0
+1662652474698:for (i in 1:length(letters)) {
+1662652474926:if (letters1(i) == FALSE) {
+1662652475186:counter = counter + 1
+1662652475429:}
+1662652475668:}
+1662652912861:counter = 0
+1662652912920:for (i in 1:length(letters)) {
+1662652912959:if (letters %in% c("t", "e", "s", "t") == FALSE) {
+1662652912983:counter = counter + 1
+1662652913006:}
+1662652913043:}
+1662653190142:counter = 0
+1662653190669:i =1
+1662653191196:for (i in 1:length(letters)) {
+1662653191545:if (letters %in% c("t", "e", "s", "t") == FALSE) {
+1662653191879:counter = counter + 1
+1662653192212:}
+1662653192572:}
+1662653233375:lettersTest = letters %in% c("t", "e", "s", "t")
+1662653233414:counter = 0
+1662653233471:i =1
+1662653233512:for (i in 1:length(letters)) {
+1662653233542:if (lettersTest == FALSE) {
+1662653233567:counter = counter + 1
+1662653233590:}
+1662653233624:}
+1662653248447:lettersTest = letters %in% c("t", "e", "s", "t")
+1662653255191:counter = 0
+1662653260030:i =1
+1662653271126:for (i in 1:length(letters)) {
+1662653271462:if (lettersTest == FALSE) {
+1662653271761:counter = counter + 1
+1662653272074:}
+1662653272390:}
+1662653280838:lettersTest = letters %in% c("t", "e", "s", "t")
+1662653280890:counter = 0
+1662653280930:i =1
+1662653280975:for (i in 1:length(letters)) {
+1662653280995:if (lettersTest(i) == FALSE) {
+1662653281018:counter = counter + 1
+1662653281065:}
+1662653281088:}
+1662653359883:if (lettersTest(i) == FALSE) {
+1662653360147:counter = counter + 1
+1662653360442:}
+1662653718792:lettersTest(1)
+1662653736159:lettersTest(2)
+1662654034087:lettersTest(3)
+1662654131468:x = 1:10
+1662654160848:x(2)
+1662654165675:x[2]
+1662654174785:counter = 0
+1662654174849:i =1
+1662654174934:for (i in 1:length(letters)) {
+1662654174964:if (lettersTest[i] == FALSE) {
+1662654174992:counter = counter + 1
+1662654175056:}
+1662654175116:}
+1662654193012:counter = 0
+1662654193550:i =1
+1662654194141:for (i in 1:length(letters)) {
+1662654194472:if (lettersTest[i] == FALSE) {
+1662654194749:counter = counter + 1
+1662654195044:}
+1662654195386:}
+1662654196044:counter
+1662655013435:display(counter)
+1662655103511:which(c(F, T, F, T, F, T))
+1662655111438:help
+1662655123331:help(c())
+1662655154031:which(c(F, T, F, T, F, T))
+1662768322540:which(c(letters))
+1662768466467:which(letters %in% c("t", "e", "s", "t"))
+1662768468542:which(letters %in% c("t", "e", "s", "t"))
+1662768491200:which(letters %in% name)
+1662768495522:name <- c("s","i","m","o","n","e")
+1662768495527:# your code here
+1662768495531:which(letters %in% name)
+1662768542277:which(letters %in% name)
+1662768644902:which(letters %in% name)
+1662768714022:name <- c("s","i","m","o","n","e")
+1662768714025:# your code here
+1662768714028:t <- which(letters %in% name)
+1662768733279:```{R}
+1662768736501:which(letters %in% name)
+1662768736514:t <- which(letters %in% name)
+1662768766537:name <- c("s","i","m","o","n","e")
+1662768766542:# your code here
+1662768766546:which(letters %in% name)
+1662768766559:t <- which(letters %in% name)
+1662768957125:tPlus <- t + 1
+1662769485726:cipherPlus <- cipher + 1
+1662769492935:name <- c("s","i","m","o","n","e")
+1662769492942:# your code here
+1662769492945:which(letters %in% name)
+1662769492959:cipher <- which(letters %in% name)
+1662769499651:name <- c("s","i","m","o","n","e")
+1662769499655:# your code here
+1662769499658:which(letters %in% name)
+1662769499670:cipher <- which(letters %in% name)
+1662769503241:cipherPlus <- cipher + 1
+1662769520911:letters[cipherPlus]
+1662769540941:letters[cipher]
+1662769750205:cipherPlus <- c(cipher) + 1
+1662769833695:cipherPlus <- c(cipher) + 1
+1662769833700:letters[c(cipherPlus)]
+1662769869038:name <- c("s","i","m","o","n","e")
+1662769869042:# your code here
+1662769869044:which(c(letters %in% name))
+1662769869055:cipher <- which(letters %in% name)
+1662769876758:cipherPlus <- c(cipher) + 1
+1662769876765:letters[c(cipherPlus)]
+1662770100132:cipherMinus <- cipherPlus - 1
+1662770112231:letters[cipherMinus]
+1662770686770:for (i in 1:length(name)) {
+1662770686772:positions = name(i)
+1662770686774:}
+1662770704803:for (i in 1:length(name)) {
+1662770704806:positions = name[i]
+1662770704808:}
+1662770704817:positions
+1662770710230:for (i in 1:length(name)) {
+1662770710232:positions = name[i]
+1662770710234:}
+1662770722627:length(name)
+1662770758369:positions = name[i]
+1662770768525:for (i in 1:length(name)) {
+1662770768528:positions = name[i]
+1662770768530:}
+1662770978715:for (i in 1:length(name)) {
+1662770978718:positions = name[i]
+1662770978720:}
+1662770989900:for (i in 1:length(name)) {
+1662770989902:positions[i] = name[i]
+1662770989905:}
+1662771023457:for (i in 1:length(name)) {
+1662771023459:positions[i] = name[i]
+1662771023461:}
+1662771023470:letters(c(positions))
+1662771032829:for (i in 1:length(name)) {
+1662771032832:positions[i] = name[i]
+1662771032834:}
+1662771032844:letters[c(positions)]
+1662771045638:letters[positions]
+1662771048914:for (i in 1:length(name)) {
+1662771048916:positions[i] = name[i]
+1662771048919:}
+1662771051717:letters[positions]
+1662771058882:letters[positions]
+1662771254278:for (i in 1:length(name)) {
+1662771254281:positions[i] = name[i]
+1662771254283:}
+1662771254293:letters[positions]
+1662771332309:for (i in 1:length(name)) {
+1662771332311:positions[i] = name[i] + 1
+1662771332313:}
+1662771350111:positions[i] = name[i] + 1
+1662771383803:for (i in 1:length(name)) {
+1662771383806:positions[i] = name[i]
+1662771383808:}
+1662771383817:positions <- positions + 1
+1662771439932:for (i in 1:length(name)) {
+1662771439934:positions[i] = letters[name[i]]
+1662771439936:}
+1662771442465:letters[positions]
+1662771449453:for (i in 1:length(name)) {
+1662771449455:positions[i] = letters[name[i]]
+1662771449457:}
+1662771538043:for (i in 1:length(name)) {
+1662771538046:positions[i] = letters[name[i]]
+1662771538048:}
+1662771551595:for (i in 1:length(name)) {
+1662771551597:positions[i] = letters[name]
+1662771551600:}
+1662771577849:letters[name]
+1662771590156:name <- c("s","i","m","o","n","e")
+1662771596756:for (i in 1:length(name)) {
+1662771596759:positions[i] = letters[name]
+1662771596761:}
+1662771603978:for (i in 1:length(name)) {
+1662771603980:positions[i] = letters[name[i]]
+1662771603982:}
+1662771615498:name[1]
+1662771622969:letters[s]
+1662771628074:letters(s)
+1662771637103:letters[s]
+1662771645020:letters["s"]
+1662771662238:name <- c("s","i","m","o","n","e")
+1662771662243:# your code here
+1662771662246:which(c(letters %in% name))
+1662771662258:cipher <- which(letters %in% name)
+1662771699433:for (i in 1:length(name)) {
+1662771699435:positions[i] = which(letters %in% name)
+1662771699437:}
+1662771703142:positions[i] = which(letters %in% name)
+1662771714566:which(letters %in% name)
+1662771777000:for (i in 1:length(name)) {
+1662771777002:positions[i] = which(letters %in% name[i])
+1662771777004:}
+1662771781989:for (i in 1:length(name)) {
+1662771781992:positions[i] = which(letters %in% name[i])
+1662771781994:}
+1662771782004:letters[positions]
+1662771824231:for (i in 1:length(name)) {
+1662771824233:positions[i] = which(letters %in% name[i])
+1662771824235:}
+1662771834811:letters[positions]
+1662771859621:positions <- positions + 1
+1662771876047:for (i in 1:length(name)) {
+1662771876049:positions[i] = which(letters %in% name[i]) + 1
+1662771876052:}
+1662772120717:positions %in% letters
+1662772133123:letters %in% positions
+1662772556228:k = 1
+1662772559608:for (i in 1:length(name)) {
+1662772559610:positions[i] = which(letters %in% name[i]) + k
+1662772559613:}
+1662772684230:name2
+1662772789323:name <- c("s","i","m","o","n","e")
+1662772789328:# your code here
+1662772789332:which(c(letters %in% name))
+1662772789344:cipher <- which(letters %in% name)
+1662772816206:get_pos(name)
+1662772833140:get_pos <- function(word){
+1662772833142:which(letters %in% word)
+1662772833144:}
+1662772833148:get_pos(name)
+1662772845984:get_pos <- function(word){
+1662772845986:which(letters %in% word)
+1662772845988:}
+1662772845993:get_pos(name)
+1662772846004:get_pos(name2)
+1662773015338:help(sapply)
+1662773174523:sapply(name, get_pos)
+1662775530120:if ((positions + k) < 27){
+1662775530123:posisitions + k
+1662775530125:} else {
+1662775530127:positions + k %% 26
+1662775530129:}
+1662775540722:(positions + k) < 27
+1662775570224:positions + k
+1662775578030:c(positions + k)
+1662775584363:c(positions + k)
+1662775589578:c(positions)
+1662775616951:positions + 1
+1662775724333:for (i in 1:length(name)) {
+1662775724335:if ((positions[i] + k) < 27){
+1662775724337:positions[i] = which(letters %in% name[i]) + k
+1662775724340:} else {
+1662775724342:positions[i] + k %% 26
+1662775724345:}
+1662775724348:##positions[i] = which(letters %in% name[i]) + k
+1662775724353:}
+1662775819415:positions[i] = which(letters %in% name[i]) + k
+1662775826447:if ((positions[i] + k) < 27){
+1662775826450:positions[i] = which(letters %in% name[i]) + k
+1662775826452:}
+1662775842843:(positions[i] + k)
+1662775850606:# your code here
+1662775850608:i = 1
+1662775854912:(positions[i] + k)
+1662775865087:positions 1
+1662775868655:positions(1)
+1662775954080:positions[1]
+1662775961032:positions[1] +1
+1662775984008:k = 1
+1662775984013:for (i in 1:length(name)) {
+1662775984015:positions[i] = which(letters %in% name[i]) + k
+1662775984017:}
+1662776018242:(letters %in% positions[i] + k) < 27
+1662776021818:for (i in 1:length(name)) {
+1662776021821:if ((letters %in% positions[i] + k) < 27){
+1662776021823:positions[i] = which(letters %in% name[i]) + k
+1662776021826:} else {
+1662776021828:positions[i] + k %% 26
+1662776021830:}
+1662776021833:##positions[i] = which(letters %in% name[i]) + k
+1662776021835:}
+1662776559219:positions[i] = which(letters %in% name[i]) + k
+1662776564174:if ((letters %in% positions[i] + k) < 27){
+1662776564177:positions[i] = which(letters %in% name[i]) + k
+1662776564179:}
+1662776646318:for (i in 1:length(wordTest)) {
+1662776646320:if ((letters %in% positions[i] + k) < 27){
+1662776646323:positions[i] = which(letters %in% name[i]) + k
+1662776646325:}
+1662776757627:(letters %in% positions[i] + k)
+1662776772158:(letters %in% positions[i] + k)
+1662776778470:type((letters %in% positions[i] + k))
+1662776787276:typeof((letters %in% positions[i] + k))
+1662776803289:typeof((letters %in% positions[i] + k))
+1662777008951:letters %in% positions[1]
+1662777024089:positions[1]
+1662777253074:letters %in% name
+1662777264210:letters %in% name
+1662777275570:letters %in% wordTest
+1662777288251:letters %in% lol
+1662777290417:letters
+1662777299240:2+2
+1662777306820:2+2
+1662777320644:2=2
+1662777329198:for (i in 1:length(wordTest)) {
+1662777329201:if ((letters %in% positions[i] + k) < 27){
+1662777329203:positions[i] = which(letters %in% wordTest[i]) + k
+1662777329206:} else {
+1662777329208:positions[i] + k %% 26
+1662777329211:}
+1662777329213:##positions[i] = which(letters %in% name[i]) + k
+1662777329216:}
+1662777806398:k = 1
+1662777806402:for (i in 1:length(name)) {
+1662777806405:positions[i] = which(letters %in% name[i]) + k
+1662777806408:}
+1662777830936:```{R}
+1662777844169:for (i in 1:length(name)) {
+1662777844171:positions[i] = which(letters %in% name[i]) + k
+1662777844173:}
+1662777848905:positions[i] = which(letters %in% name[i]) + k
+1662777852583:which(letters %in% name[i]) + k
+1662777875114:name = "simone"
+1662777875116:k = 1
+1662777875122:for (i in 1:length(name)) {
+1662777875124:positions[i] = which(letters %in% name[i]) + k
+1662777875127:}
+1662777881328:which(letters %in% name[i])
+1662777909620:name = Cipher
+1662777919197:name = cipher
+1662777932576:which(letters %in% name[i]) + k
+1662777943211:letters %in% name[i]
+1662777953043:letters %in% name
+1662777956882:which(letters %in% name[i])
+1662777985720:positions = []
+1662777990909:positions = ()
+1662777997088:positions
+1662778022691:positions <- c()
+1662778025824:name = cipher
+1662778035672:name <- c("s","i","m","o","n","e")
+1662778035679:# your code here
+1662778035682:which(c(letters %in% name))
+1662778035695:cipher <- which(letters %in% name)
+1662778136202:wordTest = c("C","O","N","F","I","D","E","N","T","I","A","L")
+1663113325109:cd ~/homepage
+1663113335422:cd ~/homepage
+1663113346133:ls -a
+1663113991398:git add .
