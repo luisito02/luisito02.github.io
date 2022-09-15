@@ -891,3 +891,5 @@
 1663113335422:cd ~/homepage
 1663113346133:ls -a
 1663113991398:git add .
+1663196488599:rmarkdown::build_site("~/homepage")
+1663196528293:rmarkdown::build_site("~/homepage")

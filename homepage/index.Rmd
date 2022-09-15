@@ -1,16 +1,30 @@
 ---
-title: "Lab 3"
-author: "Me"
-date: "2022-09-14"
-output: html_document
+title: ' '
+pagetitle: 'Your Name'
+output: 
+  html_document: 
+    css: "styles.css"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{R echo=F, eval=F}
+#to build this website into the _site directory, run
+rmarkdown::site_generator()
 ```
+ 
+<img src="Baez13.jpg" style=width:40% class="img-circle">
 
-## Placeholder for website
+<br>
 
+# Welcome! I am Luis Alberto Baez. 
+  
+</br>
 
+##### I am a 3rd Year Mechanical Engeering Student.
 
+##### I love playing various insturments as well as going out to concerts
 
+##### Although I love Mechanical Engineering, I am planning to lean torward Operations Research and Data Analytics.  
+
+##### I don't have any data-related projects either, but if I did you could find them [here](/portfolio)!
+
+---

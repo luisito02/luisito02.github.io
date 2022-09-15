@@ -1,0 +1,16 @@
+name: "My Name"
+navbar:
+  title: "My Site"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Portfolio"
+      href: portfolio.html
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<lb36634@utexax.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/luisito02/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/luis-baez/
+      
